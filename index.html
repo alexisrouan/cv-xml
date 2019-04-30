@@ -2,57 +2,57 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>Curriculum Vitae Alexis Rouan</title>
-	<link rel="stylesheet" type="text/css" href="css/curriculum_vitae.css">
-	<link rel="stylesheet" type="text/css" href="css/ribbons.css">
+    <meta charset="UTF-8">
+    <title>Curriculum Vitae Alexis Rouan</title>
+    <link rel="stylesheet" type="text/css" href="css/curriculum_vitae.css">
+    <link rel="stylesheet" type="text/css" href="css/ribbons.css">
 </head>
 
-<body>
+<body class="cv-app">
 
-	<!-- Github banner link -->
-	<div class="ribbon right grey hover-effect">
-		<a href="https://github.com/alexisrouan/cv-xml" target="_blank">View on GitHub</a>
-	</div>
+    <!-- Github banner link -->
+    <div class="ribbon right grey hover-effect">
+        <a href="https://github.com/alexisrouan/cv-xml" target="_blank">View on GitHub</a>
+    </div>
 
 
-	<!-- Options -->
-	<aside aria-label="options">
-		<hr/>
-		<input type="checkbox" id="opt-accr"></input><label for="opt-accr">Sans accroche</label>
-		<hr/>
-		<input type="checkbox" id="opt-desc"></input><label for="opt-desc">Sans description</label>
-		<hr/>
-		<input type="checkbox" id="opt-compact"></input><label for="opt-compact">Compact</label>
-		<hr/>
-		<label for="font-family-input">Font family :</label>
-		<select id="font-family-input">
+    <!-- Customisation -->
+    <aside class="cv-customisation" aria-label="options">
+        <hr/>
+        <input type="checkbox" id="opt-accr" /><label for="opt-accr">Sans accroche</label>
+        <hr/>
+        <input type="checkbox" id="opt-desc" /><label for="opt-desc">Sans description</label>
+        <hr/>
+        <input type="checkbox" id="opt-compact" /><label for="opt-compact">Compact</label>
+        <hr/>
+        <label for="font-family-input">Font family :</label>
+        <select id="font-family-input">
 			<option value="Arial">Arial</option>
 			<option value="Verdana">Verdana</option>
 		</select>
-		<br/>
-		<label for="font-size-input">Font-size : <output></output></label>
-		<input id="font-size-input" type="range" value="80" max="100" min="75" step="1"></input>
-		<hr/>
-		<label for="grid-sizer-input">Grid-sizer : <output-grid></output-grid></label>
-		<input id="grid-sizer-input" type="range" value="14" max="20" min="10" step="0.1"></input>
-		<hr/>
-		<label for="gutter-sizer-input">Gutter-sizer : <output-gutter></output-gutter></label>
-		<input id="gutter-sizer-input" type="range" value="3" max="8" min="1" step="1"></input>
+        <br/>
+        <label for="font-size-input">Font-size : <output></output></label>
+        <input id="font-size-input" type="range" value="80" max="100" min="75" step="1" />
+        <hr/>
+        <label for="grid-sizer-input">Grid-sizer : <output-grid></output-grid></label>
+        <input id="grid-sizer-input" type="range" value="14" max="20" min="10" step="0.1" />
+        <hr/>
+        <label for="gutter-sizer-input">Gutter-sizer : <output-gutter></output-gutter></label>
+        <input id="gutter-sizer-input" type="range" value="3" max="8" min="1" step="1" />
 
-		<hr/>
-		<center>
-			<button id="print-button"><svg class="icon icon-print"><use xlink:href="#icon-print"></use></svg></button>
-		</center>
-	</aside>
+        <hr/>
 
+        <button class="print-button"><svg class="icon icon-print"><use xlink:href="#icon-print"></use></svg></button>
 
-	<!-- MAIN -->
-	<div id="cv-main"></div>
+    </aside>
 
 
-	<!-- SVG -->
-	<svg style="display:none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- MAIN -->
+    <div id="cv-main" class="generated-cv"></div>
+
+
+    <!-- SVG -->
+    <svg style="display:none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
 	<symbol id="icon-print" viewBox="0 0 612 612">
 		<title>imprimer</title>
@@ -61,15 +61,18 @@
 	</defs>
 	</svg>
 
-	<!-- SCRIPTS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-	<script src="js/jquery.cv.js"></script>
-	<script>
-	$(document).ready(function() {
-	  $("#cv-main").createCV("xml/cv.xml");
-	});
-	</script>
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.cv.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#cv-main").createCV({
+                url: "/cv/xml/cv.xml",
+                accroche: "false"
+            });
+        });
+    </script>
 </body>
 
 </html>
