@@ -1,0 +1,22 @@
+{
+  "name": "projet_cv_xml",
+  "version": "1.0.0",
+  "description": "Une petite application permettant de créer et gérer son CV facilement.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alexisrouan/cv-xml.git"
+  },
+  "keywords": [
+    "cv"
+  ],
+  "author": "Alexis Rouan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexisrouan/cv-xml/issues"
+  },
+  "homepage": "https://github.com/alexisrouan/cv-xml#readme"
+}

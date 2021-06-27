@@ -2,171 +2,487 @@
 
 <!DOCTYPE curriculum [
 
+<!ELEMENT curriculum (titre, accroche, identite,maj,competences,experiences,formations,divers)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT accroche (#PCDATA)>
+<!ELEMENT identite (personne, adresse, telephones, social)>
+<!ELEMENT personne (#PCDATA)>
+<!ELEMENT adresse (#PCDATA)>
+<!ELEMENT telephones (#PCDATA)>
+<!ELEMENT social (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT date_naissance (#PCDATA)>
+<!ELEMENT numerp (#PCDATA)>
+<!ELEMENT voie (#PCDATA)>
+<!ELEMENT codePostal (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT pays (#PCDATA)>
+
 ]>
 
+
+
+
+
 <curriculum>
-  <titre>Titre du curriculum</titre>
-  <accroche>Qualité / Qualité / Qualité</accroche>
-  <identite label="">
+  <titre>Développeur Web Front</titre>
+  <accroche>Rigoureux / Passionné / Expérimenté</accroche>
+  <identite>
     <personne>
-      <prenom>Prénom</prenom>
-      <nom>Nom</nom>
-      <date_naissance label='Né le'>01/01/1976</date_naissance>
+      <prenom>Alexis</prenom>
+      <nom>Rouan</nom>
+      <date_naissance label='Né le'>07/07/1976</date_naissance>
     </personne>
     <adresse>
-        <numero>numero</numero>
-        <voie type="rue">rue</voie>
-        <codePostal>Code Postal</codePostal>
-        <ville>Ville</ville>
+        <numero>26</numero>
+        <voie type="rue">rue de Lappe</voie>
+        <codePostal>75011</codePostal>
+        <ville>PARIS</ville>
+        <pays>FRANCE</pays>
     </adresse>
     <telephones>
-        <telephone type="portable">06 01 01 01 01</telephone>
+        <telephone type="portable">06 64 71 06 76</telephone>
     </telephones>
     <social>
-        <email type="personnel">email@gmail.com</email>
-        <website href="http://www.website.fr">www.website.fr</website>
+        <email type="personnel">alexis.rouan@gmail.com</email>
+        <website href="http://www.alexisrouan.fr">www.alexisrouan.fr</website>
     </social>
-
   </identite>
 
-  <competences label="compétences">
-    <competence label="compétence">
-      <item note="★★★★★">compétence</item>
-      <item note="★★★★★">compétence</item>
-      <item note="★★★★☆">compétence</item>
-    </competence>
-    <competence label="compétence">
-      <item note="★★★★★">compétence</item>
-      <item note="★★★★★">compétence</item>
-      <item note="★★★★☆">compétence</item>
-    </competence>
-    <competence label="compétence">
-      <item note="★★★★★">compétence</item>
-      <item note="★★★★★">compétence</item>
-      <item note="★★★★☆">compétence</item>
-      <item note="★★★☆☆">compétence</item>
-    </competence>
+  <maj>(Maj le 01-09-2018)</maj>
 
-    <competence label="compétence">
-      <item note="★★★☆☆">compétence</item>
-      <item note="★★★☆☆">compétence</item>
-      <item note="★★★★☆">compétence</item>
+
+  <competences label="compétences">
+    <competence label="langages">
+      <item note="5">HTML5 / CSS3 / SCSS</item>
+      <item note="4">Javascript</item>
+      <item note="4">XSL / XML </item>
+      <item note="3">PHP / ASP</item>
     </competence>
-    <competence label="compétence">
-      <item note="★★★★★">compétence compétence compétence</item>
-      <item note="★★★★★">compétence compétence compétence</item>
-      <item note="★★★★★">compétence compétence</item>
+    <competence label="logiciels">
+      <item note="5">VSCode</item>
+      <item note="5">Atom</item>
+      <item note="4">Photoshop</item>
+      <item note="5">[depreciated] Dreamweaver</item>
+      <item note="3">[depreciated] Flash</item>
+    </competence>
+    <competence label="bibliothèques">
+      <item note="5">jQuery</item>
+      <item note="5">Bootstrap</item>
+    </competence>
+    <competence label="cms">
+      <item note="4">WordPress</item>
+      <item note="5">Mailchimp</item>
+      <item note="2">Prestashop</item>
+    </competence>
+    <competence label="frameworks">
+      <item note="4">Angular 5/6</item>
+      <item note="3">Vue2.js</item>
+      <item note="3">Laravel</item>
+      <item note="1">Symfony</item>
+      <item note="1">API Platform</item>
+    </competence>
+    <competence label="outils">
+      <item note="3">Gulp, Grunt</item>
+      <item note="3">Gitkraken</item>
+      <item note="3">Git</item>
+      <item note="4">Jira</item>
+      <item note="4">Npm</item>
+      <item note="4">Github, Gitlab</item>
+      <item note="5">Restlet Client</item>
+    </competence>
+    <competence label="intégration">
+      <item note="5">Compatibilité multi-navigateur</item>
+      <item note="5">Découpe 'Pixel perfect'</item>
+      <item note="5">Optimisation (Base64, Sprites, SVG, Iconfont)</item>
     </competence>
   </competences>
 
   <experiences label="expériences professionnelles">
 
     <experience>
-      <poste>Poste / fonction</poste>
-      <client>Entreprise</client>
-      <date>01/2017 - 08/2017</date>
-      <statut>Intérim</statut>
-      <custom>Custom</custom>
-      <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</desc>
+      <poste>Développeur Front Angular 5</poste>
+      <entreprise>Web-Atrio</entreprise>
+      <date>03/2018 - Actuellement</date>
+      <statut>CDI</statut>
+      <desc>Web-Atrio est une SSII de réalisation d'applications Web.</desc>
+      <projets>
+
+        <projet>
+          <nom label="projet">Finhedge</nom>
+          <environnement>Méthode Agile</environnement>
+          <technologies>Front : Angular 5 - CSS3 - HTML5 - JSON / Back : Java </technologies>
+          <equipe label="Equipe">1 Front / 1 Back / 1 chef de projet</equipe>
+          <description>Application Web de gestion d'éparge. Propose de construire un ou des portefeuille proposés à partir d'une liste d'instruments (actions, obligations, autres) générée suivant le profil défini par l'utilisateur. L'app propose des tailles de position suivant des secteurs sélectionnés et l'état du marché et permet ensuite une optimisation de son portefeuille selon certains critères.</description>
+          <taches label="tâches">Mise en place de l'architecture de l'application Angular. Création des classes, services composents. Collaboration avec dev. back pour structure des échanges et des json. Echanges avec le client afin d'approfondir certaines fonctionalités et scénarios.</taches>
+        </projet>
+
+        <projet>
+          <nom label="projet">Fondation ARC</nom>
+          <environnement>Méthode Agile</environnement>
+          <technologies>Front : Angular 5 - CSS3 - HTML5 - JSON / Back : Symphony - API Platform / Micro-services</technologies>
+          <equipe label="Equipe">2 Front / 1 Back / 1 chef de projet</equipe>
+          <description>Très grosse applications avec de nombreux modules, permettant aux chercheurs de demander des subventions pour leurs recherches, avec de très nombreux formulaires dynamiques et règles de gestion.</description>
+          <taches label="tâches">Créations de composants, services, entre autres la création de formulaire permettant la génération de formulaires dynaniques.</taches>
+        </projet>
+
+      </projets>
+    </experience>
+
+    <experience>
+
+      <poste>Développeur Web Front</poste>
+      <client>Digitas Publicis</client>
+      <date>07/2017 - 08/2017 - 10/2017</date>
+      <statut>Auto-entrepreneur</statut>
+      <desc>DigitasLBi est une Agence de marketing. Appellé en renfort sur le projet 'Sodexo'.</desc>
       <projets>
         <projet>
-          <nom label="projet">Projet 1</nom>
-          <environnement>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</environnement>
-          <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</technologies>
-          <taches label="tâches">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</taches>
+          <nom label="projet">Sites Web Sodexo multi-pays</nom>
+          <environnement>Méthode Agile. Wordpress(Bedrock), Bootstrap 4, Git, Npm, Jira</environnement>
+          <technologies>HTML5, CSS3, jQuery, Gulp, SASS, PHP.</technologies>
+          <taches label="tâches">Correction de bugs CSS, jQuery, Javascript et PHP. Gestion des Tâches et reporting sous Jira.</taches>
         </projet>
         <projet>
-          <nom label="projet">Projet 2</nom>
-          <environnement>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</environnement>
-          <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</technologies>
-          <taches label="tâches">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</taches>
+          <nom label="projet">Application Android "Configurateur Nissan"</nom>
+          <environnement>Bootstrap 4</environnement>
+          <technologies>Vue.js, HTML5, CSS3, jQuery.</technologies>
+          <taches label="tâches">Interventions sur l'application de configurateur 3D Nissan en vue.js : correction de bugs d'affichage. Création d'une rubrique. Ajout du taggage Google Analytics.</taches>
         </projet>
       </projets>
     </experience>
 
 
+    <experience>
+      <poste>Intégrateur</poste>
+      <client>AFPOLS</client>
+      <date>03/2017</date>
+      <statut>Auto-entrepreneur</statut>
+      <desc>AFPOLS est Centre de formation continue à Paris.</desc>
+      <projets>
+        <projet>
+          <nom label="projet">Newsletter Responsive</nom>
+          <environnement>Mailchimp</environnement>
+          <technologies>Mailchimp Template Language, HTML5, CSS3.</technologies>
+          <taches label="tâches">Réalisations de templates newsletters responsive sous Mailchimp.</taches>
+        </projet>
+      </projets>
+    </experience>
+
+
+
+
+
         <experience>
-          <poste>Poste / fonction</poste>
-          <client>Entreprise</client>
-          <date>01/2017 - 08/2017</date>
+          <poste>Formateur Mailchimp</poste>
+          <client>HELIS</client>
+          <date>03/2017</date>
+          <statut>Auto-entrepreneur</statut>
+          <desc>HELIS est une entreprise de Conseil en informatique et AMOA.</desc>
+          <projets>
+            <projet>
+              <environnement>Mailchimp</environnement>
+              <technologies>HTML5, CSS3</technologies>
+              <taches label="tâches">Formation d'une personne au CMS Mailchimp</taches>
+            </projet>
+          </projets>
+        </experience>
+
+
+
+
+        <experience>
+
+          <poste>Développeur Wordpress</poste>
+          <client>APRILE PRODUCTION</client>
+          <date>04/2016</date>
+          <statut>Auto-entrepreneur</statut>
+          <desc>Aprile Production est une entreprise de réalisation vidéo.</desc>
+          <projets>
+            <projet>
+              <nom label="projet">Création du Site Web</nom>
+              <equipe></equipe>
+              <environnement>Wordpress. Starter thème "Roots Sage".</environnement>
+              <technologies>HTML5, CSS3, jQuery, PHP</technologies>
+              <taches label="tâches">Rencontre avec le client et définition des besoins. Echanges avec la graphiste lors de la conception
+              de la maquette. Création du site sous wordpress à partir de la maquette : découpe et intégration des images. Création
+              d'un thème Wordpress : création de templates.</taches>
+            </projet>
+          </projets>
+        </experience>
+
+
+
+        <experience>
+          <poste>Développeur Web / Wordpress</poste>
+          <client>LA POSTE NUMÉRIQUE</client>
+          <date>12/2015 à 03/2016</date>
+          <statut>Auto-entrepreneur</statut>
+          <desc>La branche Numérique du Groupe La Poste.</desc>
+          <projets>
+            <projet>
+              <nom label="projet">Jeu Star Wars "Instant Win"</nom>
+              <technologies>PHP, HTML5, CSS3, jQuery</technologies>
+              <taches label="tâches">Côté Front : création d'une animation HTML5/jQuery "hyper-espace". Côté Back : traitement des
+              données et attrbution de gagnants aléatoires (5 par heure).</taches>
+            </projet>
+          <projet>
+            <nom label="projet">Site Web "Start'in Post"</nom>
+            <environnement>Wordpress</environnement>
+            <technologies>HTML5, CSS3, jQuery, PHP, Gulp, SASS, Scrollmagic</technologies>
+            <taches label="tâches">Création d'un thème personnalisé à partir de maquettes.</taches>
+          </projet>
+        </projets>
+        </experience>
+
+
+
+      <experience>
+        <poste>Intégrateur</poste>
+        <client>KPMG</client>
+        <date>05/2014 à 09/2015</date>
+        <statut>Intérim</statut>
+        <desc>KPMG est cabinet d'audit et de conseils banquaire.</desc>
+        <projets>
+          <projet>
+            <technologies>HTML5, CSS3, jQuery, ASP</technologies>
+            <taches label="tâches">Mission d'origine : Intégration HTML de newsletters. A ma propre initiative, proposition et création d'une application en interne pour la création de newsletters, utilisant un système d'administration et de templates, réalisée en ASP.</taches>
+          </projet>
+        </projets>
+      </experience>
+
+
+
+        <experience>
+          <poste>Développeur Wordpress</poste>
+          <client>L'Institut de la coopération Agricole</client>
+          <date>Fin 2014 - Début 2015</date>
+          <statut>Auto-entrepreneur</statut>
+          <desc>J'ai travaillé sur la création du site à partir de zéro, ainsi que sur l'évolution pendant quelques temps.</desc>
+          <projets>
+            <projet>
+              <nom label="projet">Création du site sous Wordpress</nom>
+              <technologies>HTML5, CSS3, jQuery, PHP, Paypal</technologies>
+              <taches label="tâches">Echanges avec le client. Contacts avec le graphiste. Création du site sous wordpress à partir de la maquette : découpe et intégration des images. Création d'un thème Wordpress : création de templates. Implémentation progressive de fonctionnalités.</taches>
+            </projet>
+          </projets>
+        </experience>
+
+
+        <experience>
+          <poste>Développeur Wordpress</poste>
+          <client>FOTOAUTOMAT</client>
+          <date>Fin 2014</date>
+          <statut>Auto-entrepreneur</statut>
+          <desc>Fotoautomat propose la location de photomaton argentique vintage pour vos évènements.</desc>
+          <projets>
+            <projet>
+              <nom label="projet">Création du site sous Wordpress.</nom>
+              <technologies>HTML5, CSS3, jQuery, PHP.</technologies>
+              <taches label="tâches">Echanges avec le client. Définition des besoins. Rédaction du cahier des spécifications fonctionnelles. Contacts avec la graphiste et orientation. Création du site sous wordpress à partir de la maquette : découpe et intégration des images. Création d'un thème Wordpress : création de templates.</taches>
+            </projet>
+          </projets>
+        </experience>
+
+
+        <experience>
+          <poste>Développeur FRONT/PHP</poste>
+          <client>CPAM DE PARIS</client>
+          <date>06/2013 à 12/2013</date>
           <statut>Intérim</statut>
-          <custom>Custom</custom>
-          <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</desc>
           <projets>
             <projet>
-              <nom label="projet">Projet 1</nom>
-              <environnement>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</environnement>
-              <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</technologies>
-              <taches label="tâches">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</taches>
-            </projet>
-            <projet>
-              <nom label="projet">Projet 2</nom>
-              <environnement>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</environnement>
-              <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</technologies>
-              <taches label="tâches">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</taches>
+              <nom label="projet">Application intranet pour le calcul des indemnités</nom>
+              <technologies>HTML5, CSS3, jQuery, PHP</technologies>
+              <taches label="tâches">Update de l'application de HTML à HTML5. Implémentation du plugin jQuery 'Datatable'. Ajout de nombreuses fonctionnalités et modes de calculs via classes PHP.</taches>
             </projet>
           </projets>
         </experience>
 
 
-            <experience>
-              <poste>Poste / fonction</poste>
-              <client>Entreprise</client>
-              <date>01/2017 - 08/2017</date>
-              <statut>Intérim</statut>
-              <custom>Custom</custom>
-              <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</desc>
-              <projets>
-                <projet>
-                  <nom label="projet">Projet 1</nom>
-                  <environnement>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</environnement>
-                  <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</technologies>
-                  <taches label="tâches">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</taches>
-                </projet>
-                <projet>
-                  <nom label="projet">Projet 2</nom>
-                  <environnement>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</environnement>
-                  <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</technologies>
-                  <taches label="tâches">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</taches>
-                </projet>
-              </projets>
-            </experience>
+
+        <experience>
+          <poste>Intégrateur</poste>
+          <client>MRM</client>
+          <date>05-06/2013</date>
+          <statut>Intérim</statut>
+          <projets>
+            <projet>
+              <nom label="projet">Michelin Bidendum</nom>
+              <environnement>Bootstrap</environnement>
+              <technologies>PHOTOSHOP, HTML5, CSS3, Ajax</technologies>
+              <taches label="tâches">Intégration de pages HTML5/CSS3 responsive pour intégration dans ezPublish.</taches>
+            </projet>
+          </projets>
+        </experience>
+
 
 
 
 
 
         <experience>
-          <poste>Poste</poste>
-          <date>2009 à 2013</date>
-          <statut>Statut</statut>
-          <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</desc>
+          <poste>Développeur Web / Wordpress</poste>
+          <client>L-AGENCY</client>
+          <date>03/2013</date>
+          <statut>Intérim</statut>
           <projets>
             <projet>
-              <nom label="projet">Projet</nom>
-              <client>Client</client>
+              <nom label="projet">Création du site internet</nom>
+              <environnement>Wordpress</environnement>
+              <technologies>PHOTOSHOP, HTML5, CSS3, jQUERY.</technologies>
+              <taches label="tâches">Customisation d'un thème Wordpress : ajout de fonctionnalités.</taches>
+            </projet>
+          </projets>
+        </experience>
+
+
+        <experience>
+          <poste>Intégrateur Web</poste>
+          <date>2009 à 2013</date>
+          <statut>Intérim</statut>
+          <desc>De nombreuses missions en intérim : conception de pages à partir de maquettes et intégration.</desc>
+          <projets>
+            <projet>
+              <nom label="projet">Site Web Parfums Ferrari</nom>
+              <client>Change</client>
               <date>07/2012</date>
-              <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit</technologies>
+              <technologies>HTML5, CSS3, jQuery, Phostoshop</technologies>
             </projet>
 
             <projet>
-              <nom label="projet">Projet</nom>
-              <client>Client</client>
-              <date>07/2012</date>
-              <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit</technologies>
+              <client>Being</client>
+              <date>06/2012</date>
+              <poste>Intégrateur HTML5</poste>
             </projet>
 
             <projet>
-              <nom label="projet">Projet</nom>
-              <client>Client</client>
-              <date>07/2012</date>
-              <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit</technologies>
+              <client>Pixelis</client>
+              <date>06/2012</date>
+              <technologies>HTML5, CSS3, jQuery, Phostoshop</technologies>
+              <taches label="tâches">Intégrateur de pages pour site mobile responsive. Réalisation d'animations jQuery</taches>
             </projet>
+
+
+            <projet>
+              <nom label="projet">Nissan</nom>
+              <client>Publicis Dialog</client>
+              <date>12/2011</date>
+              <taches label="tâches">Intégration de newsletters</taches>
+            </projet>
+
+
+            <projet>
+              <client>5ème Gauche</client>
+              <date>08/2011</date>
+              <taches label="tâches">Intégration de pages responsive</taches>
+            </projet>
+
+
+            <projet>
+              <client>BBDO Proximity</client>
+              <date>06/2011</date>
+              <technologies>HTML5, CSS3, jQuery</technologies>
+              <poste>Développeur Web</poste>
+            </projet>
+
+            <projet>
+              <nom label="projet">Site Web Les Ondes Mobiles</nom>
+              <client>Tribal DDB</client>
+              <date>11/2010 et 05-06/2011</date>
+              <technologies>HTML5, CSS3, jQuery, Phostoshop</technologies>
+              <taches label="tâches">Développement du site accessibilité Web Niveau Bronze</taches>
+            </projet>
+
+
+
+            <projet>
+              <client>XL</client>
+              <date>05/2011</date>
+              <poste>Développeur Web</poste>
+            </projet>
+
+            <projet>
+              <client>Carré de Ciel</client>
+              <date>06/2010</date>
+              <taches label="tâches">Intégration de pages HTML</taches>
+            </projet>
+
+            <projet>
+              <nom label="projet">Intranet AXA</nom>
+              <client>Nude Design</client>
+              <date>06/2010 à 09/2010</date>
+              <taches label="tâches">Intégration de pages HTML5/CSS3. Travail en collaboration avec une équipe de développeurs en Inde</taches>
+            </projet>
+
+
+            <projet>
+              <client>Uniteam</client>
+              <date>10/2009</date>
+              <poste>Développeur Web</poste>
+            </projet>
+
+
+            <projet>
+              <client>FullSix</client>
+              <date>09/2009</date>
+              <poste>Intégrateur HTML</poste>
+            </projet>
+
+            <projet>
+              <client>Textuel</client>
+              <date>08/2009</date>
+              <taches label="tâches">Réalisation d'une animation Flash</taches>
+            </projet>
+
 
           </projets>
         </experience>
 
 
+
+        <experience>
+          <poste>Développeur Web</poste>
+          <client label="société">Mappy</client>
+          <date>12/2005 à 12/2008</date>
+          <statut>CDI</statut>
+          <projets>
+            <projet>
+              <nom label="projet">Site Web Mappy.com</nom>
+              <technologies>HTML, CSS, Javascript, XML, XSL, Flash Actionscript</technologies>
+              <taches label="tâches">Divers développement pour le site Mappy.com</taches>
+            </projet>
+            <projet>
+              <nom label="projet">Clients BtoB</nom>
+              <technologies>HTML, CSS, Javascript, XML, XSL, Flash Actionscript</technologies>
+              <taches label="tâches">Intégration de cartes Mappy sur le site des clients BtoB avec des POI (Point Of Interest) personnalisés</taches>
+            </projet>
+            <projet>
+              <nom label="projet">Application Flash 'Photos de villes'</nom>
+              <technologies>XML, XSL, Flash Actionscript, Ajax</technologies>
+              <taches label="tâches">Création des applications « photos de villes » en Flash dynamiques pour les sites Mappy.com, Pagesjaunes.fr, Voila.fr, Orange.fr, QDQ.com, Editus.</taches>
+            </projet>
+          </projets>
+        </experience>
+
+
+
+
+        <experience>
+          <poste>Intégrateur HTML</poste>
+          <client label="société">Euro RSCG Futurs</client>
+          <date>09/2001 à 12/2003</date>
+          <statut>CDI</statut>
+          <desc>Engagé en CDI après 1 an d'alternance.</desc>
+          <projets>
+            <projet>
+              <logiciels>Photoshop, Flash, Dreamweaver</logiciels>
+              <technologies>HTML, CSS, Javascript, Flash Actionscript</technologies>
+              <taches label="tâches">Intégration de sites HTML, DHTML, Flash, ASP, Actionscript. Maintenance et mise à jour de l'intranet</taches>
+            </projet>
+          </projets>
+        </experience>
 
   </experiences>
 
@@ -174,20 +490,20 @@
 
   <formations label="formations">
     <formation>
-      <nom>Formation professionnelle "Lorem ipsum"</nom>
+      <nom>Programmation avancée Actionscript 2.0</nom>
       <date>02/2004</date>
       <lieu>Pyramyd (75002)</lieu>
       <desc></desc>
     </formation>
     <formation>
-      <nom>Diplôme d'État "Lorem ipsum"</nom>
+      <nom>Diplôme d'État "Réalisation Multimédia" en alternance</nom>
       <date>09/2000 à 09/2001</date>
       <lieu>l'Ecole Multimédia (75003)</lieu>
       <entreprise>Euro RSCG Futurs (75001)</entreprise>
       <desc>Commencé en alternance chez Euro Rscg Futurs, puis engagé en CDI.</desc>
     </formation>
     <formation>
-      <nom>Licence "Lorem ipsum"</nom>
+      <nom>Licence Arts Plastiques</nom>
       <date>09/1998 à 09/2000</date>
       <lieu>Université Paris 1 Panthéon-Sorbonne</lieu>
       <desc></desc>
@@ -196,11 +512,14 @@
 
 
   <divers label="divers">
-    <permis>permis B</permis>
-    <langues>
-      <anglais>écrit correct</anglais>
-      <langue label="langue 2">langue 2</langue>
+    <langues label="Langues">
+      <anglais label="Anglais">Correct</anglais>
+      <allemand>Moyen</allemand>
+      <japonais>Débutant</japonais>
     </langues>
+    <autres>
+      <permis>permis B</permis>
+    </autres>
   </divers>
 
 

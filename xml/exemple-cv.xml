@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!DOCTYPE curriculum [
+
+]>
+
+<curriculum>
+  <titre>Titre du curriculum</titre>
+  <accroche>Qualité / Qualité / Qualité</accroche>
+  <identite label="">
+    <personne>
+      <prenom>Prénom</prenom>
+      <nom>Nom</nom>
+      <date_naissance label='Né le'>01/01/1976</date_naissance>
+    </personne>
+    <adresse>
+        <numero>numero</numero>
+        <voie type="rue">rue</voie>
+        <codePostal>Code Postal</codePostal>
+        <ville>Ville</ville>
+    </adresse>
+    <telephones>
+        <telephone type="portable">06 01 01 01 01</telephone>
+    </telephones>
+    <social>
+        <email type="personnel">email@gmail.com</email>
+        <website href="http://www.website.fr">www.website.fr</website>
+    </social>
+
+  </identite>
+
+  <competences label="compétences">
+    <competence label="compétence">
+      <item note="★★★★★">compétence</item>
+      <item note="★★★★★">compétence</item>
+      <item note="★★★★☆">compétence</item>
+    </competence>
+    <competence label="compétence">
+      <item note="★★★★★">compétence</item>
+      <item note="★★★★★">compétence</item>
+      <item note="★★★★☆">compétence</item>
+    </competence>
+    <competence label="compétence">
+      <item note="★★★★★">compétence</item>
+      <item note="★★★★★">compétence</item>
+      <item note="★★★★☆">compétence</item>
+      <item note="★★★☆☆">compétence</item>
+    </competence>
+
+    <competence label="compétence">
+      <item note="★★★☆☆">compétence</item>
+      <item note="★★★☆☆">compétence</item>
+      <item note="★★★★☆">compétence</item>
+    </competence>
+    <competence label="compétence">
+      <item note="★★★★★">compétence compétence compétence</item>
+      <item note="★★★★★">compétence compétence compétence</item>
+      <item note="★★★★★">compétence compétence</item>
+    </competence>
+  </competences>
+
+  <experiences label="expériences professionnelles">
+
+    <experience>
+      <poste>Poste / fonction</poste>
+      <client>Entreprise</client>
+      <date>01/2017 - 08/2017</date>
+      <statut>Intérim</statut>
+      <custom>Custom</custom>
+      <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</desc>
+      <projets>
+        <projet>
+          <nom label="projet">Projet 1</nom>
+          <environnement>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</environnement>
+          <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</technologies>
+          <taches label="tâches">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</taches>
+        </projet>
+        <projet>
+          <nom label="projet">Projet 2</nom>
+          <environnement>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</environnement>
+          <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</technologies>
+          <taches label="tâches">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</taches>
+        </projet>
+      </projets>
+    </experience>
+
+
+        <experience>
+          <poste>Poste / fonction</poste>
+          <client>Entreprise</client>
+          <date>01/2017 - 08/2017</date>
+          <statut>Intérim</statut>
+          <custom>Custom</custom>
+          <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</desc>
+          <projets>
+            <projet>
+              <nom label="projet">Projet 1</nom>
+              <environnement>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</environnement>
+              <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</technologies>
+              <taches label="tâches">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</taches>
+            </projet>
+            <projet>
+              <nom label="projet">Projet 2</nom>
+              <environnement>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</environnement>
+              <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</technologies>
+              <taches label="tâches">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</taches>
+            </projet>
+          </projets>
+        </experience>
+
+
+            <experience>
+              <poste>Poste / fonction</poste>
+              <client>Entreprise</client>
+              <date>01/2017 - 08/2017</date>
+              <statut>Intérim</statut>
+              <custom>Custom</custom>
+              <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</desc>
+              <projets>
+                <projet>
+                  <nom label="projet">Projet 1</nom>
+                  <environnement>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</environnement>
+                  <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</technologies>
+                  <taches label="tâches">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</taches>
+                </projet>
+                <projet>
+                  <nom label="projet">Projet 2</nom>
+                  <environnement>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</environnement>
+                  <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</technologies>
+                  <taches label="tâches">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</taches>
+                </projet>
+              </projets>
+            </experience>
+
+
+
+
+
+        <experience>
+          <poste>Poste</poste>
+          <date>2009 à 2013</date>
+          <statut>Statut</statut>
+          <desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</desc>
+          <projets>
+            <projet>
+              <nom label="projet">Projet</nom>
+              <client>Client</client>
+              <date>07/2012</date>
+              <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit</technologies>
+            </projet>
+
+            <projet>
+              <nom label="projet">Projet</nom>
+              <client>Client</client>
+              <date>07/2012</date>
+              <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit</technologies>
+            </projet>
+
+            <projet>
+              <nom label="projet">Projet</nom>
+              <client>Client</client>
+              <date>07/2012</date>
+              <technologies>Lorem ipsum dolor sit amet, consectetur adipiscing elit</technologies>
+            </projet>
+
+          </projets>
+        </experience>
+
+
+
+  </experiences>
+
+
+
+  <formations label="formations">
+    <formation>
+      <nom>Formation professionnelle "Lorem ipsum"</nom>
+      <date>02/2004</date>
+      <lieu>Pyramyd (75002)</lieu>
+      <desc></desc>
+    </formation>
+    <formation>
+      <nom>Diplôme d'État "Lorem ipsum"</nom>
+      <date>09/2000 à 09/2001</date>
+      <lieu>l'Ecole Multimédia (75003)</lieu>
+      <entreprise>Euro RSCG Futurs (75001)</entreprise>
+      <desc>Commencé en alternance chez Euro Rscg Futurs, puis engagé en CDI.</desc>
+    </formation>
+    <formation>
+      <nom>Licence "Lorem ipsum"</nom>
+      <date>09/1998 à 09/2000</date>
+      <lieu>Université Paris 1 Panthéon-Sorbonne</lieu>
+      <desc></desc>
+    </formation>
+  </formations>
+
+
+  <divers label="divers">
+    <permis>permis B</permis>
+    <langues>
+      <anglais>écrit correct</anglais>
+      <langue label="langue 2">langue 2</langue>
+    </langues>
+  </divers>
+
+
+
+
+</curriculum>

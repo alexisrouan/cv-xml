@@ -1,78 +1,103 @@
 <!DOCTYPE html>
+
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Curriculum Vitae Alexis Rouan</title>
-    <link rel="stylesheet" type="text/css" href="css/curriculum_vitae.css">
-    <link rel="stylesheet" type="text/css" href="css/ribbons.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curriculum Vitae Alexis Rouan</title>
+        <link rel="stylesheet"
+              type="text/css"
+              href="css/curriculum_vitae.css">
+        <link rel="stylesheet"
+              type="text/css"
+              href="css/ribbons.css">
+    </head>
 
-<body class="cv-app">
+    <body class="cv-app">
+        <!-- Github banner link -->
+        <div class="ribbon right grey hover-effect">
+            <a href="https://github.com/alexisrouan/cv-xml"
+               target="_blank">View on GitHub</a>
+        </div>
+        <!-- Customisation -->
 
-    <!-- Github banner link -->
-    <div class="ribbon right grey hover-effect">
-        <a href="https://github.com/alexisrouan/cv-xml" target="_blank">View on GitHub</a>
-    </div>
+        <aside class="cv-customisation"
+               aria-label="options">
+            <hr />
+            <input type="checkbox"
+                   id="opt-accr" /><label for="opt-accr">Sans accroche</label>
+            <hr />
+            <input type="checkbox"
+                   id="opt-desc" /><label for="opt-desc">Sans description</label>
+            <hr />
+            <input type="checkbox"
+                   id="opt-compact" /><label for="opt-compact">Compact</label>
+            <hr />
+            <label for="font-family-input">Font family :</label>
+            <select id="font-family-input">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+            <br />
+            <label for="font-size-input">Font-size : <output></output></label>
+            <input id="font-size-input"
+                   type="range"
+                   value="80"
+                   max="100"
+                   min="75"
+                   step="1" />
+            <hr />
+            <label for="grid-sizer-input">Grid-sizer : <output-grid></output-grid></label>
+            <input id="grid-sizer-input"
+                   type="range"
+                   value="14"
+                   max="20"
+                   min="10"
+                   step="0.1" />
+            <hr />
+            <label for="gutter-sizer-input">Gutter-sizer : <output-gutter></output-gutter></label>
+            <input id="gutter-sizer-input"
+                   type="range"
+                   value="3"
+                   max="8"
+                   min="1"
+                   step="1" />
+            <hr />
+            <button class="print-button"><svg class="icon icon-print">
+                    <use xlink:href="#icon-print"></use>
+                </svg></button>
 
-
-    <!-- Customisation -->
-    <aside class="cv-customisation" aria-label="options">
-        <hr/>
-        <input type="checkbox" id="opt-accr" /><label for="opt-accr">Sans accroche</label>
-        <hr/>
-        <input type="checkbox" id="opt-desc" /><label for="opt-desc">Sans description</label>
-        <hr/>
-        <input type="checkbox" id="opt-compact" /><label for="opt-compact">Compact</label>
-        <hr/>
-        <label for="font-family-input">Font family :</label>
-        <select id="font-family-input">
-			<option value="Arial">Arial</option>
-			<option value="Verdana">Verdana</option>
-		</select>
-        <br/>
-        <label for="font-size-input">Font-size : <output></output></label>
-        <input id="font-size-input" type="range" value="80" max="100" min="75" step="1" />
-        <hr/>
-        <label for="grid-sizer-input">Grid-sizer : <output-grid></output-grid></label>
-        <input id="grid-sizer-input" type="range" value="14" max="20" min="10" step="0.1" />
-        <hr/>
-        <label for="gutter-sizer-input">Gutter-sizer : <output-gutter></output-gutter></label>
-        <input id="gutter-sizer-input" type="range" value="3" max="8" min="1" step="1" />
-
-        <hr/>
-
-        <button class="print-button"><svg class="icon icon-print"><use xlink:href="#icon-print"></use></svg></button>
-
-    </aside>
-
-
-    <!-- MAIN -->
-    <div id="cv-main" class="generated-cv"></div>
-
-
-    <!-- SVG -->
-    <svg style="display:none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<defs>
-	<symbol id="icon-print" viewBox="0 0 612 612">
-		<title>imprimer</title>
-		<path class="path1" d="M494.313 553.358H117.708V447.997H97.675v126.521h416.694V447.997h-20.056v105.361zm-25.447-405.21H359.414V37.481h-216.27v222.722h325.722V148.148zm-351.158-.109H97.675v112.175h20.034V148.039zm396.661.01h-20.045v112.154h20.045V148.049zM384.85 55.35l-.021 67.351h66.345L384.85 55.35zM79.052 422.54H532.97v-25.951H79.052v25.951zm460.774-184.908v48.028H72.229v-48.028H0v61.927h612v-61.927h-72.174zM143.167 447.997v79.926h325.7v-79.926h-325.7zM.033 490.974h53.583v-119.82h504.789v119.82h53.584V325.017H.033v165.957z"></path>
-	</symbol>
-	</defs>
-	</svg>
-
-    <!-- SCRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="js/jquery.cv.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#cv-main").createCV({
-                url: "/cv/xml/cv.xml",
-                accroche: "false"
-            });
-        });
-    </script>
-</body>
-
+        </aside>
+        <!-- MAIN -->
+        <div id="cv-main"
+             class="generated-cv"></div>
+        <!-- SVG -->
+        <svg style="display:none"
+             version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <symbol id="icon-print"
+                        viewBox="0 0 612 612">
+                    <title>imprimer</title>
+                    <path class="path1"
+                          d="M494.313 553.358H117.708V447.997H97.675v126.521h416.694V447.997h-20.056v105.361zm-25.447-405.21H359.414V37.481h-216.27v222.722h325.722V148.148zm-351.158-.109H97.675v112.175h20.034V148.039zm396.661.01h-20.045v112.154h20.045V148.049zM384.85 55.35l-.021 67.351h66.345L384.85 55.35zM79.052 422.54H532.97v-25.951H79.052v25.951zm460.774-184.908v48.028H72.229v-48.028H0v61.927h612v-61.927h-72.174zM143.167 447.997v79.926h325.7v-79.926h-325.7zM.033 490.974h53.583v-119.82h504.789v119.82h53.584V325.017H.033v165.957z"></path>
+                </symbol>
+            </defs>
+        </svg>
+        <!-- SCRIPTS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script src="js/jquery.cv.js"></script>
+        <script>
+            $( document ).ready( function () {
+                $( "#cv-main" ).createCV( {
+                    url: "/alexdev/cv/PROJET_CV_XML/xml/cv.xml",
+                    accroche: false,
+                    masonry: true,
+                    cardExp: false
+                } );
+            } );
+        </script>
+    </body>
 </html>
